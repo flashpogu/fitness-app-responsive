@@ -98,13 +98,13 @@ const controls = useDragControls();
       <Class
         key={`${item.name}-${index}`}
         {...item}
-        style={{
+{/*         style={{
           position: "absolute", // Make each Class item absolute-positioned
           left: `${index * 200}px`, // Adjust spacing between items if needed
           width: "200px", // Set width for each Class item (adjust as needed)
           opacity: 0, // Initially hide all Class items
           transition: "opacity 0.2s ease-in-out", // Transition for opacity change
-        }}
+        }} */}
         onDragEnter={(event) => (event.currentTarget.style.opacity = 1)} // Make dragged item fully visible
         onDragLeave={(event) => (event.currentTarget.style.opacity = 0)} // Hide other items on drag leave
       />
