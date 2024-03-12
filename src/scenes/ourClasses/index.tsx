@@ -49,7 +49,7 @@ type Props = {
 const OurCLasses = ({setSelectedPage}: Props) => {
 const controls = useDragControls();
   const [width, setWidth] = useState(0);
-  const carousel = useRef();
+  const carousel = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
